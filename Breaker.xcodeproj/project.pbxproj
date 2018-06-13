@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		DC6F567320CDFF3B00AD2151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F567220CDFF3B00AD2151 /* AppDelegate.swift */; };
-		DC6F567520CDFF3B00AD2151 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F567420CDFF3B00AD2151 /* art.scnassets */; };
 		DC6F567720CDFF3B00AD2151 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F567620CDFF3B00AD2151 /* GameViewController.swift */; };
 		DC6F567A20CDFF3B00AD2151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F567820CDFF3B00AD2151 /* Main.storyboard */; };
 		DC6F567C20CDFF3C00AD2151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F567B20CDFF3C00AD2151 /* Assets.xcassets */; };
 		DC6F567F20CDFF3C00AD2151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F567D20CDFF3C00AD2151 /* LaunchScreen.storyboard */; };
+		DC6F568920CE034300AD2151 /* Breaker.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F568820CE034300AD2151 /* Breaker.scnassets */; };
+		DC6F568F20CE03B200AD2151 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F568B20CE03B200AD2151 /* SCNVector3+Extensions.swift */; };
+		DC6F569020CE03B200AD2151 /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F568C20CE03B200AD2151 /* GameUtils.swift */; };
+		DC6F569120CE03B200AD2151 /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F568D20CE03B200AD2151 /* GameHelper.swift */; };
+		DC6F569220CE03B200AD2151 /* SCNAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F568E20CE03B200AD2151 /* SCNAction+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC6F566F20CDFF3B00AD2151 /* Breaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F567220CDFF3B00AD2151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6F567420CDFF3B00AD2151 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		DC6F567620CDFF3B00AD2151 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DC6F567920CDFF3B00AD2151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6F567B20CDFF3C00AD2151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F567E20CDFF3C00AD2151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6F568020CDFF3C00AD2151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6F568820CE034300AD2151 /* Breaker.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Breaker.scnassets; sourceTree = "<group>"; };
+		DC6F568B20CE03B200AD2151 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		DC6F568C20CE03B200AD2151 /* GameUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
+		DC6F568D20CE03B200AD2151 /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
+		DC6F568E20CE03B200AD2151 /* SCNAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNAction+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,9 @@
 		DC6F567120CDFF3B00AD2151 /* Breaker */ = {
 			isa = PBXGroup;
 			children = (
+				DC6F568A20CE03B200AD2151 /* GameUtils */,
+				DC6F568820CE034300AD2151 /* Breaker.scnassets */,
 				DC6F567220CDFF3B00AD2151 /* AppDelegate.swift */,
-				DC6F567420CDFF3B00AD2151 /* art.scnassets */,
 				DC6F567620CDFF3B00AD2151 /* GameViewController.swift */,
 				DC6F567820CDFF3B00AD2151 /* Main.storyboard */,
 				DC6F567B20CDFF3C00AD2151 /* Assets.xcassets */,
@@ -65,6 +74,17 @@
 				DC6F568020CDFF3C00AD2151 /* Info.plist */,
 			);
 			path = Breaker;
+			sourceTree = "<group>";
+		};
+		DC6F568A20CE03B200AD2151 /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F568B20CE03B200AD2151 /* SCNVector3+Extensions.swift */,
+				DC6F568C20CE03B200AD2151 /* GameUtils.swift */,
+				DC6F568D20CE03B200AD2151 /* GameHelper.swift */,
+				DC6F568E20CE03B200AD2151 /* SCNAction+Extensions.swift */,
+			);
+			path = GameUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6F567520CDFF3B00AD2151 /* art.scnassets in Resources */,
 				DC6F567F20CDFF3C00AD2151 /* LaunchScreen.storyboard in Resources */,
 				DC6F567C20CDFF3C00AD2151 /* Assets.xcassets in Resources */,
+				DC6F568920CE034300AD2151 /* Breaker.scnassets in Resources */,
 				DC6F567A20CDFF3B00AD2151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6F569120CE03B200AD2151 /* GameHelper.swift in Sources */,
 				DC6F567720CDFF3B00AD2151 /* GameViewController.swift in Sources */,
+				DC6F569220CE03B200AD2151 /* SCNAction+Extensions.swift in Sources */,
+				DC6F569020CE03B200AD2151 /* GameUtils.swift in Sources */,
+				DC6F568F20CE03B200AD2151 /* SCNVector3+Extensions.swift in Sources */,
 				DC6F567320CDFF3B00AD2151 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
